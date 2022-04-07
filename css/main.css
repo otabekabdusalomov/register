@@ -1,0 +1,308 @@
+/* GENERAL CSS */
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins-v19-latin-300.eot');
+    src: url('../fonts/poppins-v19-latin-300.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/poppins-v19-latin-300.woff2') format('woff2'),
+    url('../fonts/poppins-v19-latin-300.woff') format('woff'),
+    url('../fonts/poppins-v19-latin-300.ttf') format('truetype'),
+    url('../fonts/poppins-v19-latin-300.svg#Poppins') format('svg');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v19-latin-regular.eot');
+    src: url('../fonts/poppins-v19-latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/poppins-v19-latin-regular.woff2') format('woff2'),
+    url('../fonts/poppins-v19-latin-regular.woff') format('woff'),
+    url('../fonts/poppins-v19-latin-regular.ttf') format('truetype'),
+    url('../fonts/poppins-v19-latin-regular.svg#Poppins') format('svg');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v19-latin-500.eot');
+    src: url('../fonts/poppins-v19-latin-500.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/poppins-v19-latin-500.woff2') format('woff2'),
+    url('../fonts/poppins-v19-latin-500.woff') format('woff'),
+    url('../fonts/poppins-v19-latin-500.ttf') format('truetype'),
+    url('../fonts/poppins-v19-latin-500.svg#Poppins') format('svg');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v19-latin-600.eot');
+    src: url('../fonts/poppins-v19-latin-600.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/poppins-v19-latin-600.woff2') format('woff2'),
+    url('../fonts/poppins-v19-latin-600.woff') format('woff'),
+    url('../fonts/poppins-v19-latin-600.ttf') format('truetype'),
+    url('../fonts/poppins-v19-latin-600.svg#Poppins') format('svg');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v19-latin-700.eot');
+    src: url('../fonts/poppins-v19-latin-700.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/poppins-v19-latin-700.woff2') format('woff2'),
+    url('../fonts/poppins-v19-latin-700.woff') format('woff'),
+    url('../fonts/poppins-v19-latin-700.ttf') format('truetype'),
+    url('../fonts/poppins-v19-latin-700.svg#Poppins') format('svg');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/poppins-v19-latin-800.eot');
+    src: url('../fonts/poppins-v19-latin-800.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/poppins-v19-latin-800.woff2') format('woff2'),
+    url('../fonts/poppins-v19-latin-800.woff') format('woff'),
+    url('../fonts/poppins-v19-latin-800.ttf') format('truetype'),
+    url('../fonts/poppins-v19-latin-800.svg#Poppins') format('svg');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins-v19-latin-900.eot');
+    src: url('../fonts/poppins-v19-latin-900.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/poppins-v19-latin-900.woff2') format('woff2'),
+    url('../fonts/poppins-v19-latin-900.woff') format('woff'),
+    url('../fonts/poppins-v19-latin-900.ttf') format('truetype'),
+    url('../fonts/poppins-v19-latin-900.svg#Poppins') format('svg');
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+span{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-repeat: no-repeat; */
+    font-family: 'Poppins'
+}
+
+img{
+    display: inline-block;
+}
+
+.unver-desc{
+    font-size: 13px;
+    color: grey;
+}
+
+.header{
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-repeat: no-repeat;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.nav-list{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-item:nth-child(2){
+    margin: 0 20px;
+}
+
+.nav-link{
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #ffff;
+    text-decoration: none;
+    color:#4158D0;
+}
+
+.nav-link:hover{
+    border: 3px solid grey;
+}
+
+.nav-link:active{
+    opacity: 0.5;
+}
+
+.nav-link::after{
+    content: "\00bb";
+    margin-left: 5px;
+    transition: 0.6s;
+}
+
+/* TICKET SECTION */
+
+.ticket-section{
+    display: flex;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ticket-box{
+    padding: 50px 30px 30px 30px;
+    margin: 100px auto;
+    width: 600px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.ticket-location{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line{
+    width: 50px;
+    height: 10px;
+    border-radius: 5px;
+    background-color:rgb(127, 146, 239);
+}
+
+.ticket-here-name{
+    margin: 0;
+    padding: 0;
+    font-size: 70px;
+    font-weight: 900;
+    color:#13216a;
+}
+
+.ticket-here-desc{
+    margin: 0;
+    padding: 0;
+    color: grey;
+}
+
+.ticket-there-desc{
+    margin: 0;
+    padding: 0;
+    color: grey;
+    text-align: end;
+}
+
+/* TICKET NUMBER INFO */
+
+.ticket-number-info{
+    margin-top: 75px;
+}
+
+.ticknum-list{
+    display: flex;
+    padding: 0 30px;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.ticknum-desc{
+    color: grey;
+    font-size: 13px;
+}
+
+/* PASSENGER INFORMATION */
+
+.passenger-info-box{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.passeng-info-list{
+    margin: 0;
+    list-style-type: none;
+}
+
+.passeng-info-item:nth-child(2){
+    margin: 40px 0;
+}
+
+.passeng-info-desc{
+    color: grey;
+    font-size: 13px;
+}
+
+/* ACCOUNT SECTION */
+
+.account-section{
+    z-index: 10;
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    background-size: cover;
+}
+
+.account-set-box{
+    margin: 30px auto;
+    position: relative;
+    width: 600px;
+    background-color: yellow;
+    border-radius: 4px;
+}
+
+.accset-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 30px 70px 30px;
+}
+
+.accset-name{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* FORM  */
+
+.form-container{
+    position: relative;
+    left: 30px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.form-avatar{
+    position: relative;
+    top: -50px;
+    left: 30px;
+    border-radius: 50%;
+}
+
+.form{
+    padding: 0 30px 30px 30px;
+}
+
+.form-inp-username{
+    color: #000;
+    border-bottom: 2px solid black;
+}
